@@ -1,0 +1,10 @@
+{
+  "name": "Pricing Launch Strategy Evidence Model",
+  "threshold": 60,
+  "principles": [
+    "trace every result to supplied inputs",
+    "fail closed on missing or malformed evidence",
+    "separate computed facts from assumptions"
+  ],
+  "formula": "(min(d['price'],d['willingness_to_pay'])-d['variable_cost'])*d['expected_units']-d['launch_cost']"
+}

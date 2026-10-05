@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Behavior-Readiness System",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "business_outcome",
+        "role_behavior_map",
+        "baseline",
+        "content_process_tool_gaps",
+        "practice_coaching",
+        "certification",
+        "field_reinforcement",
+        "leading_lagging_evaluation"
+      ],
+      "properties": {
+        "business_outcome": {
+          "type": "string",
+          "minLength": 3
+        },
+        "role_behavior_map": {
+          "type": "string",
+          "minLength": 3
+        },
+        "baseline": {
+          "type": "string",
+          "minLength": 3
+        },
+        "content_process_tool_gaps": {
+          "type": "string",
+          "minLength": 3
+        },
+        "practice_coaching": {
+          "type": "string",
+          "minLength": 3
+        },
+        "certification": {
+          "type": "string",
+          "minLength": 3
+        },
+        "field_reinforcement": {
+          "type": "string",
+          "minLength": 3
+        },
+        "leading_lagging_evaluation": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

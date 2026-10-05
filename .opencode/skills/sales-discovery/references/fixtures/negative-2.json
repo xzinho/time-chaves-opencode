@@ -1,0 +1,14 @@
+{
+  "answers": {
+    "situation": "Evidência verificável com fonte primária e contexto suficiente",
+    "urgency": "Evidência verificável com fonte primária e contexto suficiente",
+    "authority": "Evidência verificável com fonte primária e contexto suficiente",
+    "success": "Evidência verificável com fonte primária e contexto suficiente"
+  },
+  "signals": {
+    "impact": true,
+    "urgency": true,
+    "authority": true,
+    "fit": true
+  }
+}

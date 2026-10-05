@@ -1,0 +1,10 @@
+{
+  "name": "Market Research Evidence Model",
+  "threshold": 60,
+  "principles": [
+    "trace every result to supplied inputs",
+    "fail closed on missing or malformed evidence",
+    "separate computed facts from assumptions"
+  ],
+  "formula": "(min(d['market_size']/10000000,1)*25+d['growth_rate']*100*.25+(1-d['competition_intensity'])*25+d['evidence_quality']*25)"
+}

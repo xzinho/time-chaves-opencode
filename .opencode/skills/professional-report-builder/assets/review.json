@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "scope",
+    "method",
+    "findings",
+    "limitations",
+    "recommendations"
+  ]
+}

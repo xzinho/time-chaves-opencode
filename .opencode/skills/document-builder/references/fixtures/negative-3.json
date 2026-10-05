@@ -1,0 +1,20 @@
+{
+  "purpose": "decidir",
+  "audience": "diretoria",
+  "sections": [
+    {
+      "title": "Diagnóstico",
+      "body": "Evidência verificável com fonte primária e contexto suficiente"
+    },
+    {
+      "title": "Diagnóstico",
+      "body": "Evidência verificável com fonte primária e contexto suficiente"
+    }
+  ],
+  "sources": [
+    "https://example.org/a"
+  ],
+  "metadata": {
+    "version": "1"
+  }
+}

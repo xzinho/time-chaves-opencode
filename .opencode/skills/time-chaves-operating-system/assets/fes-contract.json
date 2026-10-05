@@ -1,0 +1,17 @@
+{
+  "states": [
+    "NOVA",
+    "EM_PROVA",
+    "EM_EXECUCAO",
+    "BLOQUEADA",
+    "EM_VALIDACAO",
+    "CONCLUIDA"
+  ],
+  "required": [
+    "owner",
+    "state",
+    "evidence",
+    "next_step",
+    "eta"
+  ]
+}

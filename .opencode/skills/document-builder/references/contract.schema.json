@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Semantic Document Pipeline",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "content_model",
+        "style_map",
+        "page_section_rules",
+        "components_tables_callouts",
+        "links_media",
+        "generate",
+        "parse_back",
+        "visual_accessibility_qa",
+        "export"
+      ],
+      "properties": {
+        "content_model": {
+          "type": "string",
+          "minLength": 3
+        },
+        "style_map": {
+          "type": "string",
+          "minLength": 3
+        },
+        "page_section_rules": {
+          "type": "string",
+          "minLength": 3
+        },
+        "components_tables_callouts": {
+          "type": "string",
+          "minLength": 3
+        },
+        "links_media": {
+          "type": "string",
+          "minLength": 3
+        },
+        "generate": {
+          "type": "string",
+          "minLength": 3
+        },
+        "parse_back": {
+          "type": "string",
+          "minLength": 3
+        },
+        "visual_accessibility_qa": {
+          "type": "string",
+          "minLength": 3
+        },
+        "export": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

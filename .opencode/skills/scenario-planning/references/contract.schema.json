@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Uncertainty-to-Options",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "focal_question_horizon",
+        "environmental_scan",
+        "forces",
+        "predetermineds",
+        "rank_impact_uncertainty",
+        "scenario_logics",
+        "narratives_quantification",
+        "strategy_wind_tunnel",
+        "options",
+        "indicators_triggers"
+      ],
+      "properties": {
+        "focal_question_horizon": {
+          "type": "string",
+          "minLength": 3
+        },
+        "environmental_scan": {
+          "type": "string",
+          "minLength": 3
+        },
+        "forces": {
+          "type": "string",
+          "minLength": 3
+        },
+        "predetermineds": {
+          "type": "string",
+          "minLength": 3
+        },
+        "rank_impact_uncertainty": {
+          "type": "string",
+          "minLength": 3
+        },
+        "scenario_logics": {
+          "type": "string",
+          "minLength": 3
+        },
+        "narratives_quantification": {
+          "type": "string",
+          "minLength": 3
+        },
+        "strategy_wind_tunnel": {
+          "type": "string",
+          "minLength": 3
+        },
+        "options": {
+          "type": "string",
+          "minLength": 3
+        },
+        "indicators_triggers": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

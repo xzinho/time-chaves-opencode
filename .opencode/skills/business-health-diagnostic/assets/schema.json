@@ -1,0 +1,16 @@
+{
+  "version": "3.1.9",
+  "skill": "business-health-diagnostic",
+  "required": [
+    "revenue_growth",
+    "gross_margin",
+    "cash_months",
+    "customer_concentration"
+  ],
+  "outputs": [
+    "score",
+    "risk_band",
+    "drivers"
+  ],
+  "additionalProperties": true
+}

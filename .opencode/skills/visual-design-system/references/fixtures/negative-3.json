@@ -1,0 +1,31 @@
+{
+  "tokens": {
+    "color": {},
+    "type": {},
+    "space": {},
+    "radius": {},
+    "shadow": {}
+  },
+  "components": [
+    {
+      "name": "Button",
+      "states": [],
+      "token_refs": [
+        "color"
+      ]
+    },
+    {
+      "name": "Input",
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "error"
+      ],
+      "token_refs": [
+        "space"
+      ]
+    }
+  ]
+}

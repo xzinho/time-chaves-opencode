@@ -1,0 +1,21 @@
+{
+  "canvas": "decision map",
+  "items": [
+    {
+      "kind": "node",
+      "id": "a",
+      "label": "Entrada"
+    },
+    {
+      "kind": "node",
+      "id": "b",
+      "label": "Decisão"
+    },
+    {
+      "kind": "edge",
+      "id": "e",
+      "from": "a",
+      "to": "missing"
+    }
+  ]
+}

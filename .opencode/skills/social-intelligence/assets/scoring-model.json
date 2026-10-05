@@ -1,0 +1,11 @@
+{
+  "weights": {
+    "mentions": 0.3,
+    "engagement": 0.5,
+    "authors": 0.2
+  },
+  "max_age_hours": 24,
+  "required_sources": [
+    "x"
+  ]
+}

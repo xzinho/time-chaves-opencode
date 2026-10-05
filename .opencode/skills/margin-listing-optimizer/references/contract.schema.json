@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SKU Contribution Engine",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "sku_canal",
+        "fee_tax_shipping_returns_ads_waterfall",
+        "current_margin",
+        "competitor_content_audit",
+        "price_scenarios",
+        "listing_experiments",
+        "guardrails",
+        "monitor"
+      ],
+      "properties": {
+        "sku_canal": {
+          "type": "string",
+          "minLength": 3
+        },
+        "fee_tax_shipping_returns_ads_waterfall": {
+          "type": "string",
+          "minLength": 3
+        },
+        "current_margin": {
+          "type": "string",
+          "minLength": 3
+        },
+        "competitor_content_audit": {
+          "type": "string",
+          "minLength": 3
+        },
+        "price_scenarios": {
+          "type": "string",
+          "minLength": 3
+        },
+        "listing_experiments": {
+          "type": "string",
+          "minLength": 3
+        },
+        "guardrails": {
+          "type": "string",
+          "minLength": 3
+        },
+        "monitor": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "required": [
+    "name",
+    "job",
+    "pain",
+    "alternative",
+    "evidence"
+  ],
+  "min_evidence_chars": 5
+}

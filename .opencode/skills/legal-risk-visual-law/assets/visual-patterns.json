@@ -1,0 +1,11 @@
+{
+  "patterns": [
+    "timeline",
+    "decision-tree",
+    "responsibility-map"
+  ],
+  "accessibility": {
+    "contrast_min": 4.5,
+    "plain_language": true
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reproducible Evidence Synthesis",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "protocol_question",
+        "search_strings_sources_date",
+        "inclusion_exclusion",
+        "capture_metadata",
+        "screen",
+        "extract_claims_quotes_context",
+        "assess_authority_recency_directness",
+        "triangulate",
+        "synthesize_with_confidence",
+        "bibliography_limitations"
+      ],
+      "properties": {
+        "protocol_question": {
+          "type": "string",
+          "minLength": 3
+        },
+        "search_strings_sources_date": {
+          "type": "string",
+          "minLength": 3
+        },
+        "inclusion_exclusion": {
+          "type": "string",
+          "minLength": 3
+        },
+        "capture_metadata": {
+          "type": "string",
+          "minLength": 3
+        },
+        "screen": {
+          "type": "string",
+          "minLength": 3
+        },
+        "extract_claims_quotes_context": {
+          "type": "string",
+          "minLength": 3
+        },
+        "assess_authority_recency_directness": {
+          "type": "string",
+          "minLength": 3
+        },
+        "triangulate": {
+          "type": "string",
+          "minLength": 3
+        },
+        "synthesize_with_confidence": {
+          "type": "string",
+          "minLength": 3
+        },
+        "bibliography_limitations": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

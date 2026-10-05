@@ -1,0 +1,12 @@
+# Arquivos de sistema
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Temporarios
+*.tmp
+*.bak
+*~
+
+# Sessoes/estado local do OpenCode (nao versionar)
+.opencode/cache/

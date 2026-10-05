@@ -1,0 +1,10 @@
+{
+  "name": "Objection Pipeline Forecast Evidence Model",
+  "threshold": 60,
+  "principles": [
+    "trace every result to supplied inputs",
+    "fail closed on missing or malformed evidence",
+    "separate computed facts from assumptions"
+  ],
+  "formula": "d['deals']*d['average_ticket']*d['stage_probability']*(1-d['objection_penalty'])"
+}

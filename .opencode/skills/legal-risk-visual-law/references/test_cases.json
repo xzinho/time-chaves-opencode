@@ -1,0 +1,93 @@
+[
+  {
+    "id": "positive-1",
+    "kind": "positive",
+    "fixture": "positive-1.json",
+    "behavior": "legal-risk-visual-law:domain-scenario-1",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    }
+  },
+  {
+    "id": "positive-2",
+    "kind": "positive",
+    "fixture": "positive-2.json",
+    "behavior": "legal-risk-visual-law:domain-scenario-2:resource-variant-a",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    },
+    "mutate": {
+      "asset": "risk-matrix.json",
+      "path": "likelihood.0",
+      "value": 2
+    }
+  },
+  {
+    "id": "positive-3",
+    "kind": "positive",
+    "fixture": "positive-3.json",
+    "behavior": "legal-risk-visual-law:domain-scenario-3:resource-variant-b",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    },
+    "mutate": {
+      "asset": "risk-matrix.json",
+      "path": "likelihood.1",
+      "value": 3
+    }
+  },
+  {
+    "id": "negative-1",
+    "fixture": "negative-1.json",
+    "mutate": {
+      "asset": "risk-matrix.json",
+      "path": "bands.low",
+      "value": [
+        1,
+        5
+      ]
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    },
+    "kind": "negative",
+    "invariant": "legal-risk-visual-law:closed-failure-1"
+  },
+  {
+    "id": "negative-2",
+    "fixture": "negative-2.json",
+    "mutate": {
+      "asset": "risk-matrix.json",
+      "path": "bands.critical",
+      "value": [
+        18,
+        25
+      ]
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    },
+    "kind": "negative",
+    "invariant": "legal-risk-visual-law:closed-failure-2"
+  },
+  {
+    "id": "negative-3",
+    "fixture": "negative-3.json",
+    "mutate": {
+      "asset": "visual-patterns.json",
+      "path": "accessibility.contrast_min",
+      "value": 3
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    },
+    "kind": "negative",
+    "invariant": "legal-risk-visual-law:closed-failure-3"
+  }
+]

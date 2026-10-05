@@ -1,0 +1,87 @@
+[
+  {
+    "id": "positive-1",
+    "kind": "positive",
+    "fixture": "positive-1.json",
+    "behavior": "web-research-with-sources:domain-scenario-1",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    }
+  },
+  {
+    "id": "positive-2",
+    "kind": "positive",
+    "fixture": "positive-2.json",
+    "behavior": "web-research-with-sources:domain-scenario-2:resource-variant-a",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    },
+    "mutate": {
+      "asset": "sources.json",
+      "path": "sources.0.title",
+      "value": "WCAG 2.2 alternative"
+    }
+  },
+  {
+    "id": "positive-3",
+    "kind": "positive",
+    "fixture": "positive-3.json",
+    "behavior": "web-research-with-sources:domain-scenario-3:resource-variant-b",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    },
+    "mutate": {
+      "asset": "sources.json",
+      "path": "sources.0.published",
+      "value": "2023-10-05 alternative"
+    }
+  },
+  {
+    "id": "negative-1",
+    "fixture": "negative-1.json",
+    "mutate": {
+      "asset": "sources.json",
+      "path": "sources.0.url",
+      "value": "http://example.com"
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    },
+    "kind": "negative",
+    "invariant": "web-research-with-sources:closed-failure-1"
+  },
+  {
+    "id": "negative-2",
+    "fixture": "negative-2.json",
+    "mutate": {
+      "asset": "sources.json",
+      "path": "sources.0.quote",
+      "value": ""
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    },
+    "kind": "negative",
+    "invariant": "web-research-with-sources:closed-failure-2"
+  },
+  {
+    "id": "negative-3",
+    "fixture": "negative-3.json",
+    "mutate": {
+      "asset": "sources.json",
+      "path": "sources.0.claim_ids",
+      "value": []
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    },
+    "kind": "negative",
+    "invariant": "web-research-with-sources:closed-failure-3"
+  }
+]

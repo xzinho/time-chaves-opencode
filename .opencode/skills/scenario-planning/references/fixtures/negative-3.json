@@ -1,0 +1,8 @@
+{
+  "downside": 10,
+  "base": 10,
+  "upside": 10,
+  "p_downside": 0.5,
+  "p_base": 0.5,
+  "p_upside": 0.5
+}

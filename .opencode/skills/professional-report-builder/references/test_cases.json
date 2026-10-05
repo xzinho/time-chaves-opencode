@@ -1,0 +1,38 @@
+[
+  {
+    "id": "positive-1",
+    "kind": "positive",
+    "fixture": "positive-1.json",
+    "behavior": "professional-report-builder:positive-branch-1"
+  },
+  {
+    "id": "positive-2",
+    "kind": "positive",
+    "fixture": "positive-2.json",
+    "behavior": "professional-report-builder:positive-branch-2"
+  },
+  {
+    "id": "positive-3",
+    "kind": "positive",
+    "fixture": "positive-3.json",
+    "behavior": "professional-report-builder:positive-branch-3"
+  },
+  {
+    "id": "negative-1",
+    "kind": "negative",
+    "fixture": "negative-1.json",
+    "invariant": "weak report section scope"
+  },
+  {
+    "id": "negative-2",
+    "kind": "negative",
+    "fixture": "negative-2.json",
+    "invariant": "citations required"
+  },
+  {
+    "id": "negative-3",
+    "kind": "negative",
+    "fixture": "negative-3.json",
+    "invariant": "citation URL invalid"
+  }
+]

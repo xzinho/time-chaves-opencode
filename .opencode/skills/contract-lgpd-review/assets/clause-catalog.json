@@ -1,0 +1,20 @@
+{
+  "clauses": [
+    {
+      "id": "purpose",
+      "required": true
+    },
+    {
+      "id": "retention",
+      "required": true
+    },
+    {
+      "id": "incident",
+      "required": true
+    },
+    {
+      "id": "subprocessor",
+      "required": true
+    }
+  ]
+}

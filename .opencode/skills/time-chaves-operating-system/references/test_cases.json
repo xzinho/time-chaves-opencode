@@ -1,0 +1,72 @@
+[
+  {
+    "id": "positive-1",
+    "fixture": "valid.json",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    }
+  },
+  {
+    "id": "positive-2",
+    "fixture": "valid.json",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    }
+  },
+  {
+    "id": "positive-3",
+    "fixture": "valid.json",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    }
+  },
+  {
+    "id": "negative-domain-1",
+    "fixture": "valid.json",
+    "mutate": {
+      "asset": "agents.json",
+      "path": "agents.1.id",
+      "value": "main"
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    }
+  },
+  {
+    "id": "negative-domain-2",
+    "fixture": "valid.json",
+    "mutate": {
+      "asset": "agents.json",
+      "path": "agents",
+      "value": [
+        {
+          "id": "kiko",
+          "role": "operations"
+        }
+      ]
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    }
+  },
+  {
+    "id": "negative-domain-3",
+    "fixture": "valid.json",
+    "mutate": {
+      "asset": "fes-contract.json",
+      "path": "required",
+      "value": [
+        "owner"
+      ]
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    }
+  }
+]

@@ -1,0 +1,6 @@
+{
+  // Time Chaves para OpenCode V2
+  // Documentacao: https://opencode.ai/v2/docs
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "chaves"
+}

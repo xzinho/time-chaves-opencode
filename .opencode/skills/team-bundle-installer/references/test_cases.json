@@ -1,0 +1,65 @@
+[
+  {
+    "id": "positive-1",
+    "fixture": "valid.json",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    }
+  },
+  {
+    "id": "positive-2",
+    "fixture": "valid.json",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    }
+  },
+  {
+    "id": "positive-3",
+    "fixture": "valid.json",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    }
+  },
+  {
+    "id": "negative-domain-1",
+    "fixture": "valid.json",
+    "mutate": {
+      "asset": "bundle-manifest.json",
+      "path": "files.0.path",
+      "value": "../escape"
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    }
+  },
+  {
+    "id": "negative-domain-2",
+    "fixture": "valid.json",
+    "mutate": {
+      "asset": "bundle-manifest.json",
+      "path": "files.0.sha256",
+      "value": "bad"
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    }
+  },
+  {
+    "id": "negative-domain-3",
+    "fixture": "valid.json",
+    "mutate": {
+      "asset": "bundle-manifest.json",
+      "path": "files.0.mode",
+      "value": "0777"
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    }
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "threats": [
+    {
+      "id": "T01",
+      "asset": "session",
+      "vector": "stolen token",
+      "impact": 5,
+      "likelihood": 4
+    }
+  ]
+}

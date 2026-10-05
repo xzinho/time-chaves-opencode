@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Accrual-to-Cash Bridge",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "importar_plano_raz_o_extratos",
+        "mapear_contas",
+        "montar_dre",
+        "classificar_caixa",
+        "bridge_lucro",
+        "caixa",
+        "aging_working_capital",
+        "cen_rios_e_reconcilia_es"
+      ],
+      "properties": {
+        "importar_plano_raz_o_extratos": {
+          "type": "string",
+          "minLength": 3
+        },
+        "mapear_contas": {
+          "type": "string",
+          "minLength": 3
+        },
+        "montar_dre": {
+          "type": "string",
+          "minLength": 3
+        },
+        "classificar_caixa": {
+          "type": "string",
+          "minLength": 3
+        },
+        "bridge_lucro": {
+          "type": "string",
+          "minLength": 3
+        },
+        "caixa": {
+          "type": "string",
+          "minLength": 3
+        },
+        "aging_working_capital": {
+          "type": "string",
+          "minLength": 3
+        },
+        "cen_rios_e_reconcilia_es": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

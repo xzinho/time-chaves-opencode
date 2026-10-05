@@ -1,0 +1,10 @@
+{
+  "name": "Business Health Diagnostic Evidence Model",
+  "threshold": 60,
+  "principles": [
+    "trace every result to supplied inputs",
+    "fail closed on missing or malformed evidence",
+    "separate computed facts from assumptions"
+  ],
+  "formula": "max(0,min(100, 25 + d['revenue_growth']*100 + d['gross_margin']*40 + min(d['cash_months'],12)*2 - d['customer_concentration']*30))"
+}

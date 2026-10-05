@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Awareness-Proof Sequence",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "voice_of_customer",
+        "est_gio_sofistica_o",
+        "desired_action",
+        "belief_chain",
+        "headline_promessa",
+        "mecanismo",
+        "prova",
+        "objection_handling",
+        "offer_cta",
+        "substantiation_read_aloud"
+      ],
+      "properties": {
+        "voice_of_customer": {
+          "type": "string",
+          "minLength": 3
+        },
+        "est_gio_sofistica_o": {
+          "type": "string",
+          "minLength": 3
+        },
+        "desired_action": {
+          "type": "string",
+          "minLength": 3
+        },
+        "belief_chain": {
+          "type": "string",
+          "minLength": 3
+        },
+        "headline_promessa": {
+          "type": "string",
+          "minLength": 3
+        },
+        "mecanismo": {
+          "type": "string",
+          "minLength": 3
+        },
+        "prova": {
+          "type": "string",
+          "minLength": 3
+        },
+        "objection_handling": {
+          "type": "string",
+          "minLength": 3
+        },
+        "offer_cta": {
+          "type": "string",
+          "minLength": 3
+        },
+        "substantiation_read_aloud": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

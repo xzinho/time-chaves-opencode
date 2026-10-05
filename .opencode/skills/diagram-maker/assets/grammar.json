@@ -1,0 +1,14 @@
+{
+  "types": {
+    "flow": [
+      "start",
+      "process",
+      "decision",
+      "end"
+    ],
+    "sequence": [
+      "actor",
+      "message"
+    ]
+  }
+}

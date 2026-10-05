@@ -1,0 +1,27 @@
+{
+  "tokens": {
+    "spacing": 7
+  },
+  "screens": [
+    {
+      "name": "Home",
+      "components": [
+        "hero"
+      ],
+      "states": [
+        "loading",
+        "empty"
+      ]
+    },
+    {
+      "name": "Detail",
+      "components": [
+        "card"
+      ],
+      "states": [
+        "error",
+        "success"
+      ]
+    }
+  ]
+}

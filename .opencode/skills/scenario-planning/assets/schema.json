@@ -1,0 +1,18 @@
+{
+  "version": "3.1.9",
+  "skill": "scenario-planning",
+  "required": [
+    "downside",
+    "base",
+    "upside",
+    "p_downside",
+    "p_base",
+    "p_upside"
+  ],
+  "outputs": [
+    "expected_value",
+    "range",
+    "probability_sum"
+  ],
+  "additionalProperties": true
+}

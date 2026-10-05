@@ -1,0 +1,11 @@
+{
+  "purpose": "decidir",
+  "audience": "diretoria",
+  "sections": "bad",
+  "sources": [
+    "https://example.org/a"
+  ],
+  "metadata": {
+    "version": "1"
+  }
+}

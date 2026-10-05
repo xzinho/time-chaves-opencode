@@ -1,0 +1,39 @@
+{
+  "scenes": [
+    {
+      "beat": "hook",
+      "narration": "Gancho curto e específico",
+      "visual": "Cena demonstrativa"
+    },
+    {
+      "beat": "problem",
+      "narration": "Mensagem objetiva baseada em evidência",
+      "visual": "Cena demonstrativa"
+    },
+    {
+      "beat": "stakes",
+      "narration": "Mensagem objetiva baseada em evidência",
+      "visual": "Cena demonstrativa"
+    },
+    {
+      "beat": "mechanism",
+      "narration": "Mensagem objetiva baseada em evidência",
+      "visual": "Cena demonstrativa"
+    },
+    {
+      "beat": "proof",
+      "narration": "Mensagem objetiva baseada em evidência",
+      "visual": "Cena demonstrativa"
+    },
+    {
+      "beat": "offer",
+      "narration": "Mensagem objetiva baseada em evidência",
+      "visual": "Cena demonstrativa"
+    },
+    {
+      "beat": "cta",
+      "narration": "Mensagem objetiva baseada em evidência",
+      "visual": "Cena demonstrativa"
+    }
+  ]
+}

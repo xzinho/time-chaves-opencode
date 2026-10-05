@@ -1,0 +1,38 @@
+[
+  {
+    "id": "positive-1",
+    "kind": "positive",
+    "fixture": "positive-1.json",
+    "behavior": "creative-ideation:positive-branch-1"
+  },
+  {
+    "id": "positive-2",
+    "kind": "positive",
+    "fixture": "positive-2.json",
+    "behavior": "creative-ideation:positive-branch-2"
+  },
+  {
+    "id": "positive-3",
+    "kind": "positive",
+    "fixture": "positive-3.json",
+    "behavior": "creative-ideation:positive-branch-3"
+  },
+  {
+    "id": "negative-1",
+    "kind": "negative",
+    "fixture": "negative-1.json",
+    "invariant": "missing problem"
+  },
+  {
+    "id": "negative-2",
+    "kind": "negative",
+    "fixture": "negative-2.json",
+    "invariant": "at least five ideas required"
+  },
+  {
+    "id": "negative-3",
+    "kind": "negative",
+    "fixture": "negative-3.json",
+    "invariant": "duplicate idea"
+  }
+]

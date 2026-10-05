@@ -1,0 +1,7 @@
+{
+  "deals": "not-a-number",
+  "average_ticket": 10,
+  "stage_probability": 0.5,
+  "objection_penalty": 0.1,
+  "sales_cycle_days": 10
+}

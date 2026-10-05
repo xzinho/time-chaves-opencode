@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Data-Clause Trace",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "partes_pap_is",
+        "data_flow_map",
+        "tabela_cl_usula_tema",
+        "base_finalidade",
+        "direitos_retention_security_subprocessors_incidents_transfers",
+        "gaps",
+        "redlines_e_perguntas"
+      ],
+      "properties": {
+        "partes_pap_is": {
+          "type": "string",
+          "minLength": 3
+        },
+        "data_flow_map": {
+          "type": "string",
+          "minLength": 3
+        },
+        "tabela_cl_usula_tema": {
+          "type": "string",
+          "minLength": 3
+        },
+        "base_finalidade": {
+          "type": "string",
+          "minLength": 3
+        },
+        "direitos_retention_security_subprocessors_incidents_transfers": {
+          "type": "string",
+          "minLength": 3
+        },
+        "gaps": {
+          "type": "string",
+          "minLength": 3
+        },
+        "redlines_e_perguntas": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

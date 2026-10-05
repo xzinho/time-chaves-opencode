@@ -1,0 +1,45 @@
+{
+  "problem": "reduzir churn",
+  "ideas": [
+    {
+      "title": "Ideia 0",
+      "scores": {
+        "novelty": 3,
+        "relevance": 4,
+        "feasibility": 3
+      }
+    },
+    {
+      "title": "Ideia 0",
+      "scores": {
+        "novelty": 4,
+        "relevance": 4,
+        "feasibility": 3
+      }
+    },
+    {
+      "title": "Ideia 2",
+      "scores": {
+        "novelty": 3,
+        "relevance": 4,
+        "feasibility": 3
+      }
+    },
+    {
+      "title": "Ideia 3",
+      "scores": {
+        "novelty": 4,
+        "relevance": 4,
+        "feasibility": 3
+      }
+    },
+    {
+      "title": "Ideia 4",
+      "scores": {
+        "novelty": 3,
+        "relevance": 4,
+        "feasibility": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Inventory Competitor Go No Go Evidence Model",
+  "threshold": 60,
+  "principles": [
+    "trace every result to supplied inputs",
+    "fail closed on missing or malformed evidence",
+    "separate computed facts from assumptions"
+  ],
+  "formula": "(min(d['stock_units']/d['demand_units'],1)*30 + max(0,1-d['lead_time_days']/90)*20 + min(d['competitor_price']/d['our_price'],1.5)*20 + d['gross_margin']*30)"
+}

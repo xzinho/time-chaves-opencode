@@ -1,0 +1,17 @@
+{
+  "journeys": [
+    {
+      "name": "login",
+      "steps": [
+        "open /login",
+        "fill email",
+        "fill password",
+        "submit"
+      ],
+      "assertions": [
+        "url=/dashboard",
+        "session_cookie_secure"
+      ]
+    }
+  ]
+}

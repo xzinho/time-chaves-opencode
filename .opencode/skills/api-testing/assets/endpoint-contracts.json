@@ -1,0 +1,13 @@
+{
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/users/{id}",
+      "expected_status": 200,
+      "required_response": [
+        "id",
+        "email"
+      ]
+    }
+  ]
+}

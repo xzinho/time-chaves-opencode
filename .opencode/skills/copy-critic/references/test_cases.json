@@ -1,0 +1,38 @@
+[
+  {
+    "id": "positive-1",
+    "kind": "positive",
+    "fixture": "positive-1.json",
+    "behavior": "copy-critic:positive-branch-1"
+  },
+  {
+    "id": "positive-2",
+    "kind": "positive",
+    "fixture": "positive-2.json",
+    "behavior": "copy-critic:positive-branch-2"
+  },
+  {
+    "id": "positive-3",
+    "kind": "positive",
+    "fixture": "positive-3.json",
+    "behavior": "copy-critic:positive-branch-3"
+  },
+  {
+    "id": "negative-1",
+    "kind": "negative",
+    "fixture": "negative-1.json",
+    "invariant": "copy too short for critique"
+  },
+  {
+    "id": "negative-2",
+    "kind": "negative",
+    "fixture": "negative-2.json",
+    "invariant": "all ratings required"
+  },
+  {
+    "id": "negative-3",
+    "kind": "negative",
+    "fixture": "negative-3.json",
+    "invariant": "rating outside 1..5"
+  }
+]

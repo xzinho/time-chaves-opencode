@@ -1,0 +1,8 @@
+{
+  "allowed": [
+    "node",
+    "edge",
+    "group",
+    "annotation"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "thresholds": {
+    "blocker": 2,
+    "warning": 3
+  }
+}

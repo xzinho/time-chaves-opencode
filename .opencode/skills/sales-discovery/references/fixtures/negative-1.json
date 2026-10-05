@@ -1,0 +1,8 @@
+{
+  "signals": {
+    "impact": true,
+    "urgency": true,
+    "authority": true,
+    "fit": true
+  }
+}

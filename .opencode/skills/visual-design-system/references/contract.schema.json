@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Token-Component-Governance",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "product_audit",
+        "principles",
+        "primitive_semantic_component_tokens",
+        "component_anatomy_states",
+        "accessibility",
+        "documentation_examples",
+        "versioning_contribution",
+        "adoption_metrics"
+      ],
+      "properties": {
+        "product_audit": {
+          "type": "string",
+          "minLength": 3
+        },
+        "principles": {
+          "type": "string",
+          "minLength": 3
+        },
+        "primitive_semantic_component_tokens": {
+          "type": "string",
+          "minLength": 3
+        },
+        "component_anatomy_states": {
+          "type": "string",
+          "minLength": 3
+        },
+        "accessibility": {
+          "type": "string",
+          "minLength": 3
+        },
+        "documentation_examples": {
+          "type": "string",
+          "minLength": 3
+        },
+        "versioning_contribution": {
+          "type": "string",
+          "minLength": 3
+        },
+        "adoption_metrics": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

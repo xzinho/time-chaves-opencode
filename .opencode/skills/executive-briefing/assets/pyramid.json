@@ -1,0 +1,10 @@
+{
+  "order": [
+    "decision",
+    "why_now",
+    "evidence",
+    "options",
+    "recommendation",
+    "next_step"
+  ]
+}

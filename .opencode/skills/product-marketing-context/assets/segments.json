@@ -1,0 +1,11 @@
+{
+  "segments": [
+    {
+      "name": "SMB ops",
+      "job": "reduce manual work",
+      "pain": "tool fragmentation",
+      "alternative": "spreadsheets",
+      "evidence": "12 interviews"
+    }
+  ]
+}

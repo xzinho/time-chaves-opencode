@@ -1,0 +1,14 @@
+{
+  "rows": [
+    {
+      "category": "A",
+      "amount": 200
+    },
+    {
+      "category": "C",
+      "amount": 75
+    }
+  ],
+  "value_field": "amount",
+  "group_field": "category"
+}

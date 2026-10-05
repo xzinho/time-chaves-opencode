@@ -1,0 +1,9 @@
+{
+  "groups": [
+    "color",
+    "type",
+    "space",
+    "radius",
+    "shadow"
+  ]
+}

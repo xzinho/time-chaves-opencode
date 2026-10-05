@@ -1,0 +1,71 @@
+[
+  {
+    "id": "positive-1",
+    "kind": "positive",
+    "fixture": "positive-1.json",
+    "invariants": [
+      "exit=0",
+      "assets_consumed",
+      "skill_matches",
+      "result_nonempty",
+      "output_distinct"
+    ]
+  },
+  {
+    "id": "positive-2",
+    "kind": "positive",
+    "fixture": "positive-2.json",
+    "invariants": [
+      "exit=0",
+      "assets_consumed",
+      "skill_matches",
+      "result_nonempty",
+      "output_distinct"
+    ]
+  },
+  {
+    "id": "positive-3",
+    "kind": "positive",
+    "fixture": "positive-3.json",
+    "invariants": [
+      "exit=0",
+      "assets_consumed",
+      "skill_matches",
+      "result_nonempty",
+      "output_distinct"
+    ]
+  },
+  {
+    "id": "negative-1",
+    "kind": "negative",
+    "fixture": "negative-1.json",
+    "failure_class": "missing_required",
+    "invariants": [
+      "exit!=0",
+      "no_artifact",
+      "distinct_error"
+    ]
+  },
+  {
+    "id": "negative-2",
+    "kind": "negative",
+    "fixture": "negative-2.json",
+    "failure_class": "wrong_type",
+    "invariants": [
+      "exit!=0",
+      "no_artifact",
+      "distinct_error"
+    ]
+  },
+  {
+    "id": "negative-3",
+    "kind": "negative",
+    "fixture": "negative-3.json",
+    "failure_class": "domain_violation",
+    "invariants": [
+      "exit!=0",
+      "no_artifact",
+      "distinct_error"
+    ]
+  }
+]

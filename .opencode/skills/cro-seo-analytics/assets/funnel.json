@@ -1,0 +1,16 @@
+{
+  "stages": [
+    {
+      "name": "sessions",
+      "value": 1000
+    },
+    {
+      "name": "leads",
+      "value": 120
+    },
+    {
+      "name": "sales",
+      "value": 18
+    }
+  ]
+}

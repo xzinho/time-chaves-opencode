@@ -1,0 +1,26 @@
+{
+  "type": "flow",
+  "elements": [
+    {
+      "kind": "start",
+      "id": "a",
+      "label": "Início"
+    },
+    {
+      "kind": "process",
+      "id": "b",
+      "label": "Validar"
+    },
+    {
+      "kind": "end",
+      "id": "c",
+      "label": "Fim"
+    }
+  ],
+  "links": [
+    {
+      "from": "a",
+      "to": "c"
+    }
+  ]
+}

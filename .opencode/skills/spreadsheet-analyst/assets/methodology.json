@@ -1,0 +1,10 @@
+{
+  "name": "Spreadsheet Analyst Evidence Model",
+  "threshold": 60,
+  "principles": [
+    "trace every result to supplied inputs",
+    "fail closed on missing or malformed evidence",
+    "separate computed facts from assumptions"
+  ],
+  "formula": "sum(float(r[d['value_field']]) for r in d['rows'])"
+}

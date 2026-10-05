@@ -1,0 +1,18 @@
+{
+  "version": "3.1.9",
+  "skill": "margin-listing-optimizer",
+  "required": [
+    "sale_price",
+    "product_cost",
+    "marketplace_fee_rate",
+    "shipping",
+    "ad_cost",
+    "conversion_rate"
+  ],
+  "outputs": [
+    "net_margin",
+    "margin_rate",
+    "profit_per_100_visits"
+  ],
+  "additionalProperties": true
+}

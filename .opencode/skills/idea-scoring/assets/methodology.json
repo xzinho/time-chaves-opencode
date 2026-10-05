@@ -1,0 +1,10 @@
+{
+  "name": "Idea Scoring Evidence Model",
+  "threshold": 60,
+  "principles": [
+    "trace every result to supplied inputs",
+    "fail closed on missing or malformed evidence",
+    "separate computed facts from assumptions"
+  ],
+  "formula": "(d['impact']*0.35+d['confidence']*0.25+d['ease']*0.15+d['strategic_fit']*0.25)*(1 if d['evidence_count']>=2 else .6)"
+}

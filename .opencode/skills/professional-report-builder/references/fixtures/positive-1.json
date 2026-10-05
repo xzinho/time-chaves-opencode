@@ -1,0 +1,19 @@
+{
+  "report": {
+    "scope": "Evidência verificável com fonte primária e contexto suficiente",
+    "method": "Evidência verificável com fonte primária e contexto suficiente",
+    "findings": "Evidência verificável com fonte primária e contexto suficiente",
+    "limitations": "Evidência verificável com fonte primária e contexto suficiente",
+    "recommendations": "Evidência verificável com fonte primária e contexto suficiente"
+  },
+  "citations": [
+    {
+      "level": "primary",
+      "url": "https://example.org/a"
+    },
+    {
+      "level": "secondary",
+      "url": "https://example.org/b"
+    }
+  ]
+}

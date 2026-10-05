@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Asset-Threat-Control-Evidence",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "scope_data_classification",
+        "architecture_trust_boundaries",
+        "threat_model",
+        "asvs_ssdf_control_mapping",
+        "code_config_runtime_evidence",
+        "exploitability_impact",
+        "findings",
+        "remediation_retest",
+        "gate"
+      ],
+      "properties": {
+        "scope_data_classification": {
+          "type": "string",
+          "minLength": 3
+        },
+        "architecture_trust_boundaries": {
+          "type": "string",
+          "minLength": 3
+        },
+        "threat_model": {
+          "type": "string",
+          "minLength": 3
+        },
+        "asvs_ssdf_control_mapping": {
+          "type": "string",
+          "minLength": 3
+        },
+        "code_config_runtime_evidence": {
+          "type": "string",
+          "minLength": 3
+        },
+        "exploitability_impact": {
+          "type": "string",
+          "minLength": 3
+        },
+        "findings": {
+          "type": "string",
+          "minLength": 3
+        },
+        "remediation_retest": {
+          "type": "string",
+          "minLength": 3
+        },
+        "gate": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

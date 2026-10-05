@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scenario-Tradeoff Review",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "stakeholders_concerns",
+        "context_container_data_deployment_views",
+        "quality_attribute_scenarios",
+        "decision_log",
+        "tradeoff_risk_probes",
+        "fitness_functions",
+        "gate"
+      ],
+      "properties": {
+        "stakeholders_concerns": {
+          "type": "string",
+          "minLength": 3
+        },
+        "context_container_data_deployment_views": {
+          "type": "string",
+          "minLength": 3
+        },
+        "quality_attribute_scenarios": {
+          "type": "string",
+          "minLength": 3
+        },
+        "decision_log": {
+          "type": "string",
+          "minLength": 3
+        },
+        "tradeoff_risk_probes": {
+          "type": "string",
+          "minLength": 3
+        },
+        "fitness_functions": {
+          "type": "string",
+          "minLength": 3
+        },
+        "gate": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

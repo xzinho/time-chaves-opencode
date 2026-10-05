@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Risk-Journey-Evidence Suite",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "scope_risk",
+        "critical_journeys",
+        "states_fixtures",
+        "functional_tests",
+        "error_loading_empty_responsive",
+        "accessibility",
+        "visual_performance_security_adjacent_checks",
+        "flaky_test_controls",
+        "evidence_gate"
+      ],
+      "properties": {
+        "scope_risk": {
+          "type": "string",
+          "minLength": 3
+        },
+        "critical_journeys": {
+          "type": "string",
+          "minLength": 3
+        },
+        "states_fixtures": {
+          "type": "string",
+          "minLength": 3
+        },
+        "functional_tests": {
+          "type": "string",
+          "minLength": 3
+        },
+        "error_loading_empty_responsive": {
+          "type": "string",
+          "minLength": 3
+        },
+        "accessibility": {
+          "type": "string",
+          "minLength": 3
+        },
+        "visual_performance_security_adjacent_checks": {
+          "type": "string",
+          "minLength": 3
+        },
+        "flaky_test_controls": {
+          "type": "string",
+          "minLength": 3
+        },
+        "evidence_gate": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

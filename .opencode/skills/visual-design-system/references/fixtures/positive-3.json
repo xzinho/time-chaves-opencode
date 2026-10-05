@@ -1,0 +1,37 @@
+{
+  "tokens": {
+    "color": {},
+    "type": {},
+    "space": {},
+    "radius": {},
+    "shadow": {}
+  },
+  "components": [
+    {
+      "name": "Button",
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "error"
+      ],
+      "token_refs": [
+        "color"
+      ]
+    },
+    {
+      "name": "SearchInput",
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "error"
+      ],
+      "token_refs": [
+        "space"
+      ]
+    }
+  ]
+}

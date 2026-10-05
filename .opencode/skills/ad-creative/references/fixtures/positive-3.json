@@ -1,0 +1,33 @@
+{
+  "audience": "founders",
+  "offer": "audit",
+  "variants": [
+    {
+      "copy": "Diagnóstico específico 0 para reduzir desperdício",
+      "proof": "Evidência verificável com fonte primária e contexto suficiente",
+      "cta": "Agende",
+      "clarity": 1,
+      "specificity": 5,
+      "credibility": 4,
+      "cta_strength": 5
+    },
+    {
+      "copy": "Diagnóstico específico 1 para reduzir desperdício",
+      "proof": "Evidência verificável com fonte primária e contexto suficiente",
+      "cta": "Agende",
+      "clarity": 4,
+      "specificity": 5,
+      "credibility": 4,
+      "cta_strength": 5
+    },
+    {
+      "copy": "Diagnóstico específico 2 para reduzir desperdício",
+      "proof": "Evidência verificável com fonte primária e contexto suficiente",
+      "cta": "Agende",
+      "clarity": 4,
+      "specificity": 5,
+      "credibility": 4,
+      "cta_strength": 5
+    }
+  ]
+}

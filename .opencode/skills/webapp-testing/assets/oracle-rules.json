@@ -1,0 +1,12 @@
+{
+  "required_assertion_prefixes": [
+    "url=",
+    "text=",
+    "status=",
+    "session_"
+  ],
+  "forbidden_steps": [
+    "wait arbitrary",
+    "ignore error"
+  ]
+}

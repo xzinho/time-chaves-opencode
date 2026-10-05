@@ -1,0 +1,17 @@
+{
+  "version": "3.1.9",
+  "skill": "marketplace-research",
+  "required": [
+    "search_volume",
+    "median_price",
+    "seller_count",
+    "review_gap",
+    "fee_rate"
+  ],
+  "outputs": [
+    "revenue_pool_proxy",
+    "competition_ratio",
+    "opportunity_index"
+  ],
+  "additionalProperties": true
+}

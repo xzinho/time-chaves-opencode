@@ -1,0 +1,18 @@
+{
+  "version": "3.1.9",
+  "skill": "inventory-competitor-go-no-go",
+  "required": [
+    "demand_units",
+    "stock_units",
+    "lead_time_days",
+    "competitor_price",
+    "our_price",
+    "gross_margin"
+  ],
+  "outputs": [
+    "coverage_ratio",
+    "price_index",
+    "go_score"
+  ],
+  "additionalProperties": true
+}

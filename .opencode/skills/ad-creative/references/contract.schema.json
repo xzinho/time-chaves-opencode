@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Creative Evidence Loop",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "brief_verific_vel",
+        "matriz_de_tens_es",
+        "invent_rio_de_claims_provas",
+        "3_territ_rios_criativos",
+        "varia_es_hook_body_cta",
+        "gate_de_pol_tica",
+        "plano_de_c_lulas_e_hip_tese"
+      ],
+      "properties": {
+        "brief_verific_vel": {
+          "type": "string",
+          "minLength": 3
+        },
+        "matriz_de_tens_es": {
+          "type": "string",
+          "minLength": 3
+        },
+        "invent_rio_de_claims_provas": {
+          "type": "string",
+          "minLength": 3
+        },
+        "3_territ_rios_criativos": {
+          "type": "string",
+          "minLength": 3
+        },
+        "varia_es_hook_body_cta": {
+          "type": "string",
+          "minLength": 3
+        },
+        "gate_de_pol_tica": {
+          "type": "string",
+          "minLength": 3
+        },
+        "plano_de_c_lulas_e_hip_tese": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

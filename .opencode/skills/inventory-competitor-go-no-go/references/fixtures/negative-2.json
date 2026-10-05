@@ -1,0 +1,8 @@
+{
+  "demand_units": "not-a-number",
+  "stock_units": 10,
+  "lead_time_days": 10,
+  "competitor_price": 10,
+  "our_price": 10,
+  "gross_margin": 0.4
+}

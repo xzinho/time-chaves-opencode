@@ -1,0 +1,10 @@
+{
+  "name": "Margin Listing Optimizer Evidence Model",
+  "threshold": 60,
+  "principles": [
+    "trace every result to supplied inputs",
+    "fail closed on missing or malformed evidence",
+    "separate computed facts from assumptions"
+  ],
+  "formula": "d['sale_price']-d['product_cost']-d['sale_price']*d['marketplace_fee_rate']-d['shipping']-d['ad_cost']"
+}

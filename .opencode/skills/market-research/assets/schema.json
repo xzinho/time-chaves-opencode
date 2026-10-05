@@ -1,0 +1,17 @@
+{
+  "version": "3.1.9",
+  "skill": "market-research",
+  "required": [
+    "market_size",
+    "growth_rate",
+    "competition_intensity",
+    "evidence_quality",
+    "reachable_share"
+  ],
+  "outputs": [
+    "attractiveness_score",
+    "reachable_value",
+    "confidence"
+  ],
+  "additionalProperties": true
+}

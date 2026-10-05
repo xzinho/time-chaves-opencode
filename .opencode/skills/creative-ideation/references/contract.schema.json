@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tension-Recombination Portfolio",
+  "type": "object",
+  "required": [
+    "objective",
+    "context",
+    "owner",
+    "due_date",
+    "evidence",
+    "steps"
+  ],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
+    "context": {
+      "type": "string",
+      "minLength": 8
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "inference",
+              "hypothesis"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "desafio_restri_es",
+        "fatos_tens_es",
+        "est_mulos_distantes",
+        "diverg_ncia_por_operadores",
+        "clusters",
+        "concepts",
+        "cr_tica_diferida",
+        "portf_lio_exploit_explore",
+        "microteste"
+      ],
+      "properties": {
+        "desafio_restri_es": {
+          "type": "string",
+          "minLength": 3
+        },
+        "fatos_tens_es": {
+          "type": "string",
+          "minLength": 3
+        },
+        "est_mulos_distantes": {
+          "type": "string",
+          "minLength": 3
+        },
+        "diverg_ncia_por_operadores": {
+          "type": "string",
+          "minLength": 3
+        },
+        "clusters": {
+          "type": "string",
+          "minLength": 3
+        },
+        "concepts": {
+          "type": "string",
+          "minLength": 3
+        },
+        "cr_tica_diferida": {
+          "type": "string",
+          "minLength": 3
+        },
+        "portf_lio_exploit_explore": {
+          "type": "string",
+          "minLength": 3
+        },
+        "microteste": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    },
+    "decision": {
+      "type": "string"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

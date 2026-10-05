@@ -1,0 +1,89 @@
+[
+  {
+    "id": "positive-1",
+    "kind": "positive",
+    "fixture": "positive-1.json",
+    "behavior": "architecture-review:domain-scenario-1",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    }
+  },
+  {
+    "id": "positive-2",
+    "kind": "positive",
+    "fixture": "positive-2.json",
+    "behavior": "architecture-review:domain-scenario-2:resource-variant-a",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    },
+    "mutate": {
+      "asset": "dependency-rules.json",
+      "path": "forbidden_edges.0",
+      "value": "domain->ui alternative"
+    }
+  },
+  {
+    "id": "positive-3",
+    "kind": "positive",
+    "fixture": "positive-3.json",
+    "behavior": "architecture-review:domain-scenario-3:resource-variant-b",
+    "expect": {
+      "exit": 0,
+      "resources_consumed": 2
+    },
+    "mutate": {
+      "asset": "dependency-rules.json",
+      "path": "forbidden_edges.1",
+      "value": "domain->infrastructure alternative"
+    }
+  },
+  {
+    "id": "negative-1",
+    "fixture": "negative-1.json",
+    "mutate": {
+      "asset": "quality-attributes.json",
+      "path": "attributes.availability",
+      "value": 101
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    },
+    "kind": "negative",
+    "invariant": "architecture-review:closed-failure-1"
+  },
+  {
+    "id": "negative-2",
+    "fixture": "negative-2.json",
+    "mutate": {
+      "asset": "quality-attributes.json",
+      "path": "attributes.latency_p95_ms",
+      "value": 0
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    },
+    "kind": "negative",
+    "invariant": "architecture-review:closed-failure-2"
+  },
+  {
+    "id": "negative-3",
+    "fixture": "negative-3.json",
+    "mutate": {
+      "asset": "dependency-rules.json",
+      "path": "required_boundaries",
+      "value": [
+        "application"
+      ]
+    },
+    "expect": {
+      "exit_nonzero": true,
+      "no_artifact": true
+    },
+    "kind": "negative",
+    "invariant": "architecture-review:closed-failure-3"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "version": "3.1.9",
+  "skill": "cashflow-dre",
+  "required": [
+    "opening_cash",
+    "cash_receipts",
+    "cash_payments",
+    "revenue",
+    "cogs",
+    "opex"
+  ],
+  "outputs": [
+    "closing_cash",
+    "gross_profit",
+    "operating_profit"
+  ],
+  "additionalProperties": true
+}

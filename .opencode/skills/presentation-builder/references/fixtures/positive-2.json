@@ -1,0 +1,39 @@
+{
+  "slides": [
+    {
+      "beat": "context",
+      "title": "Context",
+      "points": [
+        "Contexto novo"
+      ]
+    },
+    {
+      "beat": "tension",
+      "title": "Tension",
+      "points": [
+        "Mensagem objetiva"
+      ]
+    },
+    {
+      "beat": "insight",
+      "title": "Insight",
+      "points": [
+        "Mensagem objetiva"
+      ]
+    },
+    {
+      "beat": "proof",
+      "title": "Proof",
+      "points": [
+        "Mensagem objetiva"
+      ]
+    },
+    {
+      "beat": "decision",
+      "title": "Decision",
+      "points": [
+        "Mensagem objetiva"
+      ]
+    }
+  ]
+}

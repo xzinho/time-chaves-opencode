@@ -1,0 +1,14 @@
+{
+  "type": "flow",
+  "elements": [],
+  "links": [
+    {
+      "from": "a",
+      "to": "b"
+    },
+    {
+      "from": "b",
+      "to": "c"
+    }
+  ]
+}

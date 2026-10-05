@@ -1,0 +1,14 @@
+{
+  "controls": [
+    {
+      "id": "LGPD-07",
+      "article": "art. 7º",
+      "requirement": "base legal explícita"
+    },
+    {
+      "id": "LGPD-46",
+      "article": "art. 46",
+      "requirement": "medidas de segurança"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "allowed_methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "PATCH",
+    "DELETE"
+  ],
+  "success_status": [
+    200,
+    201,
+    204
+  ]
+}

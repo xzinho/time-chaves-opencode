@@ -1,0 +1,13 @@
+{
+  "min_sources_per_claim": 1,
+  "allowed_schemes": [
+    "https"
+  ],
+  "required": [
+    "url",
+    "title",
+    "published",
+    "claim_ids",
+    "quote"
+  ]
+}

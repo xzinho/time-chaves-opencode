@@ -1,0 +1,10 @@
+{
+  "name": "Financial Modeling Evidence Model",
+  "threshold": 60,
+  "principles": [
+    "trace every result to supplied inputs",
+    "fail closed on missing or malformed evidence",
+    "separate computed facts from assumptions"
+  ],
+  "formula": "d['base_revenue']*((1+d['growth_rate'])**int(d['years']))*d['ebitda_margin']*d['multiple']"
+}

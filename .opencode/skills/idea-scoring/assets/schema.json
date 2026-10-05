@@ -1,0 +1,17 @@
+{
+  "version": "3.1.9",
+  "skill": "idea-scoring",
+  "required": [
+    "impact",
+    "confidence",
+    "ease",
+    "strategic_fit",
+    "evidence_count"
+  ],
+  "outputs": [
+    "weighted_score",
+    "evidence_penalty",
+    "decision"
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,8 @@
+{
+  "sale_price": 30,
+  "product_cost": 13,
+  "marketplace_fee_rate": 0.15,
+  "shipping": 10,
+  "ad_cost": 10,
+  "conversion_rate": 0.03
+}

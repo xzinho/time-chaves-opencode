@@ -1,0 +1,17 @@
+{
+  "version": "3.1.9",
+  "skill": "objection-pipeline-forecast",
+  "required": [
+    "deals",
+    "average_ticket",
+    "stage_probability",
+    "objection_penalty",
+    "sales_cycle_days"
+  ],
+  "outputs": [
+    "weighted_pipeline",
+    "daily_velocity",
+    "forecast_30d"
+  ],
+  "additionalProperties": true
+}

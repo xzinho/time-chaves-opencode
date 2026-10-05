@@ -1,0 +1,18 @@
+{
+  "brief": {},
+  "action": {
+    "owner": "Ana",
+    "deadline": "2026-09-01",
+    "metric": "Receita"
+  },
+  "options": [
+    {
+      "name": "A",
+      "tradeoff": "velocidade"
+    },
+    {
+      "name": "B",
+      "tradeoff": "custo"
+    }
+  ]
+}

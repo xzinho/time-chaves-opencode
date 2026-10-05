@@ -1,0 +1,7 @@
+{
+  "requires_proof": [
+    "roi",
+    "benchmark",
+    "customer_result"
+  ]
+}

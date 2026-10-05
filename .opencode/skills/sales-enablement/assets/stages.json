@@ -1,0 +1,8 @@
+{
+  "stages": [
+    "discovery",
+    "evaluation",
+    "validation",
+    "negotiation"
+  ]
+}

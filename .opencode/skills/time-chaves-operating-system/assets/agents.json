@@ -1,0 +1,12 @@
+{
+  "agents": [
+    {
+      "id": "main",
+      "role": "command"
+    },
+    {
+      "id": "kiko",
+      "role": "operations"
+    }
+  ]
+}

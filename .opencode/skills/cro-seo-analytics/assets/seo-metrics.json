@@ -1,0 +1,12 @@
+{
+  "metrics": {
+    "impressions": 5000,
+    "clicks": 300,
+    "conversions": 18
+  },
+  "required": [
+    "impressions",
+    "clicks",
+    "conversions"
+  ]
+}

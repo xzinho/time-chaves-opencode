@@ -1,0 +1,10 @@
+{
+  "name": "Marketplace Research Evidence Model",
+  "threshold": 60,
+  "principles": [
+    "trace every result to supplied inputs",
+    "fail closed on missing or malformed evidence",
+    "separate computed facts from assumptions"
+  ],
+  "formula": "d['search_volume']*d['median_price']*(1-d['fee_rate'])*(1+d['review_gap'])/max(d['seller_count'],1)"
+}

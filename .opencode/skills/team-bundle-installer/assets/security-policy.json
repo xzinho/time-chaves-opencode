@@ -1,0 +1,10 @@
+{
+  "allowed_roots": [
+    "skills/",
+    "config/"
+  ],
+  "file_modes": [
+    "0600"
+  ],
+  "deny_symlinks": true
+}

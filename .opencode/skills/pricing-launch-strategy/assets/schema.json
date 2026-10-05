@@ -1,0 +1,17 @@
+{
+  "version": "3.1.9",
+  "skill": "pricing-launch-strategy",
+  "required": [
+    "price",
+    "variable_cost",
+    "expected_units",
+    "launch_cost",
+    "willingness_to_pay"
+  ],
+  "outputs": [
+    "unit_margin",
+    "break_even_units",
+    "launch_contribution"
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,14 @@
+{
+  "required": [
+    "type",
+    "identifier",
+    "article",
+    "url",
+    "accessed"
+  ],
+  "official_hosts": [
+    "planalto.gov.br",
+    "stf.jus.br",
+    "stj.jus.br"
+  ]
+}

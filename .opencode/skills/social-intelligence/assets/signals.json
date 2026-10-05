@@ -1,0 +1,13 @@
+{
+  "signals": [
+    {
+      "id": "S1",
+      "topic": "AI agents",
+      "mentions": 120,
+      "engagement": 450,
+      "authors": 80,
+      "source": "x",
+      "observed_at": "2026-08-24T10:00:00-03:00"
+    }
+  ]
+}

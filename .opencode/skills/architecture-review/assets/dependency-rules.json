@@ -1,0 +1,11 @@
+{
+  "forbidden_edges": [
+    "domain->ui",
+    "domain->infrastructure"
+  ],
+  "required_boundaries": [
+    "domain",
+    "application",
+    "infrastructure"
+  ]
+}

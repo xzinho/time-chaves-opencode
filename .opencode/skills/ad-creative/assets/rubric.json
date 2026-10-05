@@ -1,0 +1,8 @@
+{
+  "weights": {
+    "clarity": 0.25,
+    "specificity": 0.3,
+    "credibility": 0.25,
+    "cta_strength": 0.2
+  }
+}

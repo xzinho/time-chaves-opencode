@@ -1,0 +1,9 @@
+{
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "disabled",
+    "error"
+  ]
+}

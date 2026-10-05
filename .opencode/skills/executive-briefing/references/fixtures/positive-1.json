@@ -1,0 +1,25 @@
+{
+  "brief": {
+    "decision": "Evidência verificável com fonte primária e contexto suficiente",
+    "why_now": "Evidência verificável com fonte primária e contexto suficiente",
+    "evidence": "Evidência verificável com fonte primária e contexto suficiente",
+    "options": "Evidência verificável com fonte primária e contexto suficiente",
+    "recommendation": "Evidência verificável com fonte primária e contexto suficiente",
+    "next_step": "Evidência verificável com fonte primária e contexto suficiente"
+  },
+  "action": {
+    "owner": "Ana",
+    "deadline": "2026-09-01",
+    "metric": "Receita"
+  },
+  "options": [
+    {
+      "name": "A",
+      "tradeoff": "velocidade"
+    },
+    {
+      "name": "B",
+      "tradeoff": "custo"
+    }
+  ]
+}

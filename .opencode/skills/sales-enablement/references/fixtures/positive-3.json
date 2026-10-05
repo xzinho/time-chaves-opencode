@@ -1,0 +1,29 @@
+{
+  "materials": [
+    {
+      "stage": "discovery",
+      "title": "Discovery",
+      "claims": []
+    },
+    {
+      "stage": "evaluation",
+      "title": "Evaluation",
+      "claims": []
+    },
+    {
+      "stage": "validation",
+      "title": "Validation",
+      "claims": [
+        {
+          "type": "roi",
+          "source": "https://example.org/proof"
+        }
+      ]
+    },
+    {
+      "stage": "negotiation",
+      "title": "Negotiation",
+      "claims": []
+    }
+  ]
+}

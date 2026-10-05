@@ -1,0 +1,12 @@
+{
+  "controls": [
+    {
+      "id": "C01",
+      "threats": [
+        "T01"
+      ],
+      "type": "prevent",
+      "evidence": "token rotation test"
+    }
+  ]
+}
