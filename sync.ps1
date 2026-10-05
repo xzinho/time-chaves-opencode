@@ -58,7 +58,8 @@ if (-not $SkipGlobal) {
     if (-not (Test-Path $p.Src)) { Warn "origem ausente: $($p.Src)"; continue }
     New-Item -ItemType Directory -Path $p.Dst -Force | Out-Null
     # /E copia subpastas; SEM /PURGE para nao apagar itens globais que nao sejam do time
-    robocopy $p.Src $p.Dst /E /COPY:DAT /NFL /NDL /NJH /NJS /NP | Out-Null
+    # /XF desktop.ini evita poluir o global com lixo do Windows/Drive
+    robocopy $p.Src $p.Dst /E /COPY:DAT /XF "desktop.ini" "Thumbs.db" /NFL /NDL /NJH /NJS /NP | Out-Null
     Ok "$($p.Src) -> $($p.Dst)"
   }
 } else { Warn "global ignorado (-SkipGlobal)" }
